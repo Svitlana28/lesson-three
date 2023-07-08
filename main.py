@@ -26,4 +26,22 @@ elif (n2 < n1):
     print(f"{n2}  , {n1} ")
 
     #3D
+try:
+    user1 = int(input("Enter number..."))
+    user2 = int(input("Enter number.."))
+    action_ = (input("Enter action (+,-,/,*)"))
+    match action_:
+        case "+":
+            print(user1 + user2)
+        case "-":
+            print(user1 - user2)
+        case "*":
+            print(user1 * user2)
+        case "/":
+            print(user1 / user2)
+except ValueError as error:
+    print("error", error)
+except Exception as error:
+    print("error")
+
 
